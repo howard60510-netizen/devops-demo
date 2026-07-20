@@ -11,5 +11,5 @@ COPY app/ app/
 RUN useradd -m appuser
 USER appuser
 
-EXPOSE 8080
+EXPOSE 8090
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
